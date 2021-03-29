@@ -1,4 +1,3 @@
-### `npm start`
+### `Portfolio`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Link to https://dami-majek.netlify.app/
