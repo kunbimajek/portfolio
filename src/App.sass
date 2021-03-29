@@ -1,0 +1,450 @@
+.App
+    background-color: white
+
+.container-fluid 
+    max-width: 1250px
+    margin: auto
+
+.container 
+    max-width: 1000px
+    margin: auto
+
+.text-center 
+    text-align: center
+
+.mb-20 
+    margin-bottom: 20px
+.mt-20 
+    margin-top: 20px
+.mb-40 
+    margin-bottom: 40px
+.mb-50 
+    margin-bottom: 50px
+.mb-70 
+    margin-bottom: 70px
+.py-100
+    padding: 100px 0
+.pr-20
+    padding-right: 20px
+
+.row 
+    display: flex
+    flex-wrap: wrap
+    margin-right: -15px
+    margin-left: -15px
+    @media only screen and (max-width: 1024px)
+        margin-left: 0
+        margin-right: 0
+
+[class*="col-"] 
+    position: relative
+    width: 100%
+    padding-right: 15px
+    padding-left: 15px
+
+@media only screen and (min-width: 768px)
+    .col-md-1
+        flex: 0 0 8.333333%
+        max-width: 0 0 8.333333%
+    .col-md-2
+        flex: 0 0 16.666667%
+        max-width: 0 0 16.666667%
+    .col-md-3
+        flex: 0 0 25%
+        max-width: 0 0 25%
+    .col-md-4
+        flex: 33.333333%
+        max-width: 33.333333% 
+    .col-md-5
+        flex: 0 0 41.666667%
+        max-width: 0 0 41.666667% 
+    .col-md-6
+        flex: 0 0 50%
+        max-width: 0 0 50%
+    .col-md-7
+        flex: 0 0 58.333333%
+        max-width: 0 0 58.333333%
+    .col-md-8
+        flex: 0 0 66.666667%
+        max-width: 0 0 66.666667%
+    .col-md-9
+        flex: 0 0 75%
+        max-width: 0 0 75%
+    .col-md-10
+        flex: 0 0 83.333333%
+        max-width: 0 0 83.333333%
+    .col-md-11
+        flex: 0 0 91.666667%
+        max-width: 0 0 91.666667%
+    .col-md-12
+        flex: 0 0 100%
+        max-width: 0 0 100% 
+
+h1, div.animate
+    font-size: 48px
+    line-height: 4rem
+    @media only screen and (max-width: 767px) 
+        font-size: 35px !important
+        line-height: 3rem
+
+.btn
+    float: right
+    color: white
+    background-color: #110F16
+    transition: 1s
+    padding: 12px 40px
+    border-radius: 5px
+    transition: 1s
+    &:hover 
+        box-shadow:  0px 0px 9px 2px #888888
+
+nav
+    [class*="col-"] 
+        align-self: center
+    .signature
+        font-size: 18px
+        text-align: center
+        font-family: 'Dancing Script', cursive
+        font-weight: 700
+        cursor: pointer
+        align-items: center
+        @media only screen and (max-width: 767px) 
+            float: left
+
+.navbar
+    position: relative
+    width: 100%
+    min-height: 6vh
+    z-index: 100
+    transition: all .3s ease-in-out
+    padding: 16px 0 8px
+    @media only screen and (max-width: 1265px)
+        padding: 16px 16px 8px
+    @media only screen and (max-width: 767px)
+        padding: 16px 8px 8px
+    .cv
+        @media only screen and (max-width: 1265px)
+            position: absolute
+            right: 8px
+            top: 18px
+
+.scrolled
+    position: fixed
+    top: 0
+    left: 0
+    background-color: white
+    box-shadow:  0px 0px 7px 0px #b9b9b9
+
+svg
+    path
+        transition: 1s
+    &:hover path
+        fill: #2d85b8 !important
+        
+.home 
+    margin-bottom: 50px
+    .row
+        padding: 50px 0
+    color: #110F16
+    .header-text
+        position: relative
+        display: flex
+        align-items: center
+        @media only screen and (max-width: 927px)
+            flex: 0 0 100%
+        div
+            position: absolute
+            right: 35px
+            @media only screen and (max-width: 1200px)
+                position: static
+                right: 0
+                padding-left: 24px
+            @media only screen and (max-width: 927px)
+                padding-left: 0
+                text-align: center
+                margin: 20px auto 50px
+            p
+                max-width: 500px
+                margin: 30px 0 60px
+                line-height: 2em
+    .header-image
+        margin: auto
+        text-align: center
+        visibility: hidden
+        position: relative
+        max-width: 420px
+        overflow: hidden
+        @media only screen and (max-width: 1200px)
+            // max-width: 100%
+        img 
+            height: 100%
+            width: 100%
+            object-fit: cover
+            transform-origin: left
+            transition: 1s
+            &:hover
+                opacity: 0.95
+    .scroll
+        font-size: 16px
+        position: relative
+        // font-weight: 500
+        cursor: pointer
+        display: flex
+        justify-content: center
+        margin-right: 50px
+        a
+            color: #110F16
+            animation-duration: 2s
+            animation-iteration-count: 5
+            transform-origin: bottom
+        .bounce
+            animation-name: bounce
+            animation-timing-function: ease
+        svg
+            position: absolute
+            top: 6px
+            margin-left: 10px
+        @media only screen and (max-width: 768px)
+            display: none
+
+.portfolio
+    padding-top: 100px
+    @media only screen and (max-width: 768px)
+            padding-top: 50px
+    .box
+        overflow: hidden
+        position: relative
+        text-align: center
+        cursor: pointer
+        margin-bottom: 50px
+        @media only screen and (max-width: 990px) 
+            margin-bottom: 30px
+        .icon 
+            padding: 0
+            list-style: none
+            margin: 0
+            li 
+                display: inline-block
+                a
+                    text-align: center
+                    display: block
+                    width: 40px
+                    height: 40px
+                    line-height: 40px
+                    border-radius: 50%
+                    background: #0dab76
+                    font-size: 18px
+                    color: #fff
+                    transition: all 0.5s ease 0s
+            &:hover 
+                transform: rotate(360deg)
+        &:after,
+        &:before 
+            content: ""
+            width: 100%
+            height: 100%
+            background: rgba(17, 15, 22, 0.9)
+            border-top-left-radius: 5px
+            border-top-right-radius: 5px
+            position: absolute
+            top: 0
+            left: 0
+            opacity: 0
+            transition: all 0.5s ease 0s
+            @media only screen and (max-width: 992px) 
+                border-top-left-radius: 0
+                border-top-right-radius: 0
+        &:after 
+            background: rgba(255, 255, 255, 0.1)
+            top: 0
+            left: 170%
+            opacity: 1
+            z-index: 1
+            transform: skewX(45deg)
+            transition: all 0.5s ease 0s
+        &:hover:before 
+            opacity: 1
+        &:hover:after 
+            left: -170%
+        img 
+            width: 100%
+            height: auto
+            background-color: rgba(101, 101, 101, 0.09)
+            border-top-left-radius: 5px
+            border-top-right-radius: 5px
+            padding: 80px 80px 0
+            @media only screen and (max-width: 450px) 
+                padding: 20px 20px 0
+        .box-content 
+            width: 100%
+            position: absolute
+            bottom: -100%
+            left: 0
+            transition: all 0.5s ease 0s
+        &:hover .box-content 
+            bottom: 35%
+            @media only screen and (max-width: 992px) 
+                bottom: 20%
+        .title 
+            display: block
+            font-weight: 700
+            color: #fff
+            margin: 0 0 10px
+        .about 
+            display: block
+            color: #fff
+            margin-bottom: 10px
+
+.contact
+    padding: 50px 0 200px
+    p
+        max-width: 460px
+        @media only screen and (max-width: 992px) 
+            margin: 0 auto 50px
+            padding: 0 10px
+    .btn
+        @media only screen and (max-width: 992px) 
+            float: none
+
+@media only screen and (max-width: 992px) 
+    .portfolio, .contact 
+        text-align: center
+
+footer 
+    background-color: #110F16
+    padding: 20px
+    text-align: center
+
+.ninja
+    text-shadow: -1px -1px 0 #fff,3px 3px 0 #fff,6px 6px 0 #45e6b5
+
+.loader:empty 
+    position: absolute
+    top: calc(50% - 4em)
+    left: calc(50% - 4em)
+    width: 6em
+    height: 6em
+    border: 1em solid rgba(255, 255, 255, 0.2)
+    border-left: 1.1em solid white
+    border-radius: 50%
+    margin-left: 20px
+    animation: loader 1.1s infinite linear
+
+.reveal-text,
+.reveal-text::after 
+	animation-delay: 0
+	animation-iteration-count: 1
+	animation-duration: 500ms
+	animation-fill-mode: both
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1)
+
+.reveal-text 
+	position: relative
+	animation-name: clip-text
+	white-space: nowrap
+	cursor: default
+	&::after 
+		content: ""
+		position: absolute
+		z-index: 999
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: #000000
+		transform: scaleX(0)
+		transform-origin: 0 50%
+		pointer-events: none
+		animation-name: text-revealer
+
+.pulse
+    float: left
+    &:hover, 
+    &:focus 
+        animation: pulse 1s
+        box-shadow: 0 0 0 2em rgba(#fff,0)
+        border-color: adjust-hue(#110F16, 45deg)
+        color: #fff
+
+@keyframes sideSlide 
+	60% 
+		transform: translate(20px, 0) scale(1)
+		color: #110F16
+	80% 
+		transform: translate(20px, 0) scale(1)
+		color: #110F16
+	99% 
+		transform: translate(0) scale(1.2)
+		color: #45e6b5
+	100% 
+		transform: translate(0) scale(1)
+		opacity: 1
+		color: #110F16
+
+@keyframes loader 
+  0% 
+    transform: rotate(0deg)
+  100% 
+    transform: rotate(360deg)
+    
+@keyframes clip-text 
+	from 
+		clip-path: inset(0 100% 0 0)
+	to 
+		clip-path: inset(0 0 0 0)
+
+@keyframes text-revealer 
+	0%, 50% 
+		transform-origin: 0 50%	
+	60%, 100% 
+		transform-origin: 100% 50%			
+	60% 
+		transform: scaleX(1)	
+	100% 
+		transform: scaleX(0)
+
+@keyframes bounce
+    0%    
+        transform: scale(1,1)    translateY(0) 
+    10%   
+        transform: scale(1.1,.9) translateY(0) 
+    30%   
+        transform: scale(.9,1.1) translateY(-50px) 
+    50%   
+        transform: scale(1,1)    translateY(0) 
+    57%   
+        transform: scale(1,1)    translateY(-7px) 
+    64%   
+        transform: scale(1,1)    translateY(0) 
+    100%  
+        transform: scale(1,1)    translateY(0) 
+
+@keyframes pulse 
+    0% 
+        box-shadow: 0 0 0 0 adjust-hue(#110F16, 45deg)
+
+.animate span
+    font-weight: bold !important
+    font-family: 'GT Walsheim Pro' !important
+    display: inline-block
+.animate span:nth-of-type(2) 
+	animation-delay: .05s
+.animate span:nth-of-type(3) 
+	animation-delay: .1s
+.animate span:nth-of-type(4) 
+	animation-delay: .15s
+.animate span:nth-of-type(5) 
+	animation-delay: .2s
+.animate span:nth-of-type(6) 
+	animation-delay: .25s
+.animate span:nth-of-type(7) 
+	animation-delay: .3s
+.animate span:nth-of-type(8) 
+	animation-delay: .35s
+.animate span:nth-of-type(9) 
+	animation-delay: .4s
+.animated span 
+	color: #110F16
+	opacity: 0
+	transform: translate(-300px, 0) scale(0)
+	animation: sideSlide .5s forwards
