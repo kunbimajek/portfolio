@@ -14,7 +14,7 @@ const App = () => {
   
   useEffect(() => {
     demoAsyncCall().then(() => setLoading(false));
-  })
+  }, [])
 
   if(loading) { 
     return null;
@@ -33,7 +33,7 @@ const App = () => {
 }
 
 const demoAsyncCall = () => {
-  return new Promise((resolve) => setTimeout(() => resolve(), 3500));
+  return new Promise((resolve) => setTimeout(() => resolve(), 2500));
 }
 
 export default App;

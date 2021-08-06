@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap"
 
@@ -11,24 +11,24 @@ const Home = () => {
     
     gsap.registerPlugin(ScrollTrigger); 
     
-    useEffect(() => {    
-        const container = document.querySelector(".reveal");
-        const image = container.querySelector("img");
+    const containerRef = useRef(null);
+    const imageRef = useRef(null);
 
+    useEffect(() => {    
         let tl = gsap.timeline({
             scrollTrigger: {
-                trigger: container,
+                trigger: containerRef.current,
                 toggleActions: "restart none none reset"
             }
         });
 
-        tl.set(container, { autoAlpha: 1 });
-        tl.from(container, 1.5, {
+        tl.set(containerRef.current, { autoAlpha: 1 });
+        tl.from(containerRef.current, 1.5, {
             xPercent: -30,
             ease: 2
         });
         
-        tl.from(image, 1.5, {
+        tl.from(imageRef.current, 1.5, {
             xPercent: 30,
             scale: 1.2,
             delay: -1.5,
@@ -53,8 +53,8 @@ const Home = () => {
                                 <Socials fill="#110F16"/>
                             </div>
                         </div>
-                        <div className="col-md-6 header-image reveal">
-                            <img src="/img/profile.png" alt="profile" width="60%"/>
+                        <div className="col-md-6 header-image reveal" ref={containerRef}>
+                            <img src="/img/profile.png" alt="profile" width="60%" ref={imageRef}/>
                         </div>
                     </div>
                     <div className="scroll">

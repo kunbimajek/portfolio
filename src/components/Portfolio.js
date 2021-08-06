@@ -3,12 +3,12 @@ import { Fade } from "react-awesome-reveal";
 
 const Portfolio = () => {
     const portfolio = [
-        { id: 1, src: 'img/moneybag.png', title: 'Moneybag', about: 'Save more with Moneybag', link: 'https://moneybag.netlify.app/', bg: 'blue'},
-        { id: 2, src: 'img/learnbeta.png', title: 'LearnBeta', about: 'Customized learing support for kids', link: 'http://www.learnbeta.ng/', },
-        { id: 3, src: 'img/jara.png', title: 'Jara', about: 'Data for 9mobile customers', link: 'https://www.jarahb.com', },
-        { id: 4, src: 'img/koya.jpg', title: 'Koya Stories', about: 'Improving learning outcomes', link: 'https://koya.co/stories/', },
-        { id: 5, src: 'img/watched.jpeg', title: 'Watched.', about: 'Search up and like your favourite movies ', link: 'https://watched-movie-app.netlify.app/', },
-        { id: 6, src: 'img/npay.jpeg', title: 'NPAY Dashboard', about: 'Save, pay bills & take loans with NPAY', link: 'https://npay-dashboard.netlify.app/', }
+        { id: 1, src: 'img/koya.jpeg', title: 'Koya', about: 'Improving learning outcomes', link: 'https://koya.co/', bg: 'blue'},
+        { id: 2, src: 'img/npay.jpeg', title: 'NPAY Dashboard', about: 'Save, pay bills & take loans with NPAY(Proposed UI)', link: 'https://npay-dashboard.netlify.app/', },
+        { id: 3, src: 'img/moneybag.png', title: 'Moneybag', about: 'Save more with Moneybag', link: 'https://moneybag.netlify.app/', bg: 'blue'},
+        { id: 4, src: 'img/learnbeta.png', title: 'LearnBeta', about: 'Customized learing support for kids', link: 'http://www.learnbeta.ng/', },
+        { id: 5, src: 'img/jara.png', title: 'Jara', about: 'Data for 9mobile customers', link: 'https://www.jarahb.com', },
+        { id: 6, src: 'img/watched.jpeg', title: 'Watched.', about: 'Search up and like your favourite movies ', link: 'https://watched-movie-app.netlify.app/', }
     ];
     
     return (

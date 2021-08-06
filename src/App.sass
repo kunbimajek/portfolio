@@ -81,7 +81,7 @@
         max-width: 0 0 100% 
 
 h1, div.animate
-    font-size: 48px
+    font-size: 50px
     line-height: 4rem
     @media only screen and (max-width: 767px) 
         font-size: 35px !important
@@ -112,7 +112,8 @@ nav
             float: left
 
 .navbar
-    position: relative
+    position: fixed
+    background-color: white
     width: 100%
     min-height: 6vh
     z-index: 100
@@ -129,10 +130,6 @@ nav
             top: 18px
 
 .scrolled
-    position: fixed
-    top: 0
-    left: 0
-    background-color: white
     box-shadow:  0px 0px 7px 0px #b9b9b9
 
 svg
@@ -142,9 +139,12 @@ svg
         fill: #2d85b8 !important
         
 .home 
+    padding-top: 100px
     margin-bottom: 50px
     .row
         padding: 50px 0
+        @media only screen and (max-width: 927px)
+            padding-top: 100px
     color: #110F16
     .header-text
         position: relative
@@ -167,6 +167,7 @@ svg
                 max-width: 500px
                 margin: 30px 0 60px
                 line-height: 2em
+                font-size: 17px
     .header-image
         margin: auto
         text-align: center
@@ -210,7 +211,7 @@ svg
 .portfolio
     padding-top: 100px
     @media only screen and (max-width: 768px)
-            padding-top: 50px
+            padding-top: 0
     .box
         overflow: hidden
         position: relative
@@ -287,7 +288,7 @@ svg
                 bottom: 20%
         .title 
             display: block
-            font-weight: 700
+            font-weight: 900
             color: #fff
             margin: 0 0 10px
         .about 
@@ -297,6 +298,8 @@ svg
 
 .contact
     padding: 50px 0 200px
+    @media only screen and (max-width: 768px)
+        padding-top: 0 !important
     p
         max-width: 460px
         @media only screen and (max-width: 992px) 
@@ -424,8 +427,9 @@ footer
         box-shadow: 0 0 0 0 adjust-hue(#110F16, 45deg)
 
 .animate span
-    font-weight: bold !important
-    font-family: 'GT Walsheim Pro' !important
+    font-family: 'Inter', sans-serif
+    font-weight: 900 
+    font-style: normal
     display: inline-block
 .animate span:nth-of-type(2) 
 	animation-delay: .05s
